@@ -1,0 +1,12 @@
+dev-deployment:
+ variables:
+   GIT_STRATEGY: fetch
+ script:
+   - bash ~/gitlab/bundledeploylaravelproject9.sh
+ environment:
+     name: Development
+     url : https://dm-rbex.dedicateddevelopers.us
+ tags:
+   - custom-laravel
+ only:
+   - dev
